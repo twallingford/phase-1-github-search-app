@@ -4,7 +4,7 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
   <title>Document</title>
-  <script src='js/index.js'></script>
+  <script defer src='js/index.js'></script>
   <link rel='stylesheet' href='index.css'/>
 </head>
 <body>
@@ -13,8 +13,17 @@
     <h2>GitHub Search</h2>
 
     <form id='github-form'>
-      <input id='search' type='text' name='search'>
-      <input type='submit' name='submit'/>
+      <center>
+      <input id='search' type='text' name='search'><br>
+      
+      <input id='name-search' type='radio' name='search-type' value='name-search'>
+      <label for='name-search'>Name Search</label>
+
+      <input id='repo-search' type='radio' name='search-type' value='repo-search'>
+      <label for='repo-search'>Repo Search</label>
+
+      <br>
+      <input type='submit' name='submit'/></center>
     </form>
 
     <div id='github-container'>
